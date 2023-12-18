@@ -44,10 +44,11 @@ const SectionPage = () => {
           />
           <Image
             src={okta}
-            alt={"cisco"}
+            alt={"Okta"}
             width={73}
             height={64}
-            className=" py-[0.001px]"
+            priority
+            className=" py-[0.001px] w-[73px]  h-[64px]"
           />
         </div>
       </div>

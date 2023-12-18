@@ -16,11 +16,11 @@ const List = (props: Props) => {
           viewBox="0 0 13 8"
           fill="none"
         >
-          <g clip-path="url(#clip0_1_1991)">
+          <g clipPath="url(#clip0_1_1991)">
             <path
               d="M1.1875 1L6.1875 6L11.1875 1"
               stroke="#050038"
-              stroke-width="1.5"
+              strokeWidth="1.5"
             />
           </g>
           <defs>

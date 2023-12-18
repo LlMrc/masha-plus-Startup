@@ -11,12 +11,12 @@ const CallToAction = () => {
   return (
     <div className="inline-flex flex-col items-center ">
       <h2 className="w-[1120px] h-[168px]   relative ">
-        <p className="text-[#050038] relative my-0 mx-[auto] text-center h-[168px] w-[448px] [font-family:Inter] text-5xl not-italic font-bold leading-[56px] tracking-[-1px]">
+        <div className="text-[#050038] relative my-0 mx-[auto] text-center h-[168px] w-[448px] [font-family:Inter] text-5xl not-italic font-bold leading-[56px] tracking-[-1px]">
           Collaborate without constraints
           <div className="shrink-0 absolute -top-14 -right-6">
             <Image src={banner} alt={"Group"} width={173.381} height={52.518} />
           </div>
-        </p>
+        </div>
       </h2>
       <div className="flex items-start gap-5 pl-2.5 pr-[10.141px] py-0">
         <Section
