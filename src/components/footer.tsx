@@ -13,17 +13,17 @@ type Desc = {
 
 const Footer = () => {
   return (
-    <footer className="flex items-start bg-[#050038] ">
-      <div className="flex flex-col items-center gap-[100px] px-5 pt-10 ">
+    <footer className="flex items-start bg-[#050038]   ">
+      <div className="flex flex-col items-center gap-[100px] pt-10 w-full">
         <div className="flex items-start pr-10">
           <Ul_1 title={"Product"} />
           <Ul_2 title={"Solutions"} />
           <Ul_3 title={"Resources"} />
           <Ul_4 title={"Company"} />
         </div>
-        <div className="flex items-start justify-between w-full">
-          <div className="flex items-center w-full ">
-            <div className="flex  h-[82px] w-[100%] justify-center items-start gap-6 pt-[28.5px]  px-0 text-yellow-50">
+        <div className="flex items-start justify-between w-full border-solid border-t border-[#9B99AF]">
+          <div className="flex  h-[82px]  justify-center px-4 gap-6    text-yellow-50">
+            <div className="flex w-[875.188px]  justify-center items-start gap-6 pt-[28.5px] pb-[26px] px-0">
               <Link href={""}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -116,10 +116,10 @@ const Footer = () => {
               <p>Privacy Policy</p>
               <p>Manage Cookies</p>
             </div>
-            <div className="flex items-start gap-3 pb-0.5">
-              <Image src={appstore} alt={"appstore"} />
-              <Image src={playstore} alt={"playstore"} />
-            </div>
+          </div>
+          <div className="flex self-center px-2  gap-3 ">
+            <Image src={appstore} alt={"appstore"} />
+            <Image src={playstore} alt={"playstore"} />
           </div>
         </div>
       </div>
@@ -130,9 +130,9 @@ const Footer = () => {
 const Ul_1 = (prop: Props) => {
   return (
     <div className="flex flex-col items-start gap-6 pt-0 pb-5 px-2.5">
-      <p className=" text-white [font-family:Inter] text-lg not-italic font-bold leading-6">
+      <div className=" text-white [font-family:Inter] text-lg not-italic font-bold leading-6">
         {prop.title}
-        <div className="flex flex-col items-start gap-[18px]">
+        <ul className="flex flex-col items-start gap-[18px]">
           <li className="flex flex-col items-start gap-[7px] pl-0 pr-[69px] pt-0 pb-px text-white">
             <List description={"Online whiteboard"} />
             <List description={"Apps & Integrations"} />
@@ -144,12 +144,12 @@ const Ul_1 = (prop: Props) => {
             <List description={"Changelog"} />
           </li>
           <div className="flex w-[108.609px] justify-center items-end gap-[5px]">
-            <p className=" text-white [font-family:Inter] text-base not-italic font-normal leading-6 border border-solid p-1 rounded-xl border-red-500">
+            <p className=" text-white bg-yellow-400 [font-family:Inter] text-base not-italic font-normal leading-6 border border-solid p-1 rounded-xl border-red-500">
               View demo →
             </p>
           </div>
-        </div>
-      </p>
+        </ul>
+      </div>
     </div>
   );
 };
@@ -157,7 +157,7 @@ const Ul_1 = (prop: Props) => {
 const Ul_2 = (prop: Props) => {
   return (
     <div className="flex flex-col items-start gap-6 pt-0 pb-5 px-2.5">
-      <p className=" text-white [font-family:Inter] text-lg not-italic font-bold leading-6">
+      <div className=" text-white [font-family:Inter] text-lg not-italic font-bold leading-6">
         {prop.title}
         <div className="flex flex-col items-start gap-[18px]">
           <li className="flex flex-col items-start gap-[7px] pl-0 pr-[69px] pt-0 pb-px text-white">
@@ -174,7 +174,7 @@ const Ul_2 = (prop: Props) => {
             <List description={"Wireframing"} />
           </li>
         </div>
-      </p>
+      </div>
     </div>
   );
 };
@@ -182,7 +182,7 @@ const Ul_2 = (prop: Props) => {
 const Ul_3 = (prop: Props) => {
   return (
     <div className="flex flex-col items-start gap-6 pt-0 pb-5 px-2.5">
-      <p className=" text-white [font-family:Inter] text-lg not-italic font-bold leading-6">
+      <div className=" text-white [font-family:Inter] text-lg not-italic font-bold leading-6">
         {prop.title}
         <div className="flex flex-col items-start gap-[18px]">
           <li className="flex flex-col items-start gap-[7px] pl-0 pr-[69px] pt-0 pb-px text-white">
@@ -193,7 +193,7 @@ const Ul_3 = (prop: Props) => {
             <List description={"Events"} />
           </li>
         </div>
-      </p>
+      </div>
     </div>
   );
 };
@@ -201,7 +201,7 @@ const Ul_3 = (prop: Props) => {
 const Ul_4 = (prop: Props) => {
   return (
     <div className="flex flex-col items-start gap-6 pt-0 pb-5 px-2.5">
-      <p className=" text-white [font-family:Inter] text-lg not-italic font-bold leading-6">
+      <div className=" text-white [font-family:Inter] text-lg not-italic font-bold leading-6">
         {prop.title}
         <div className="flex flex-col items-start gap-[18px]">
           <li className="flex flex-col items-start gap-[7px] pl-0 pr-[69px] pt-0 pb-px text-white">
@@ -211,7 +211,7 @@ const Ul_4 = (prop: Props) => {
             <List description={"Customer Stories"} />
           </li>
         </div>
-      </p>
+      </div>
     </div>
   );
 };

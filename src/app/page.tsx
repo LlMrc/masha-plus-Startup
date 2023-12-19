@@ -14,7 +14,6 @@ import WorkTogether from "@/components/work_together";
 export default function Home() {
   return (
     <>
-      {" "}
       <main className="flex min-h-screen w-full flex-col items-start shrink-0 justify-center ">
         <Header />
         <section className="w-full shrink-0 p-24">

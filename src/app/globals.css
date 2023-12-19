@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .img-box {
+    width: 100px;
+    border-radius: 20px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+  }
+
+  .description {
+    padding: 40px 0;
+    transform: rotate(-90deg);
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
