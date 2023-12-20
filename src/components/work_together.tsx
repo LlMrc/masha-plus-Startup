@@ -1,15 +1,30 @@
+"use client";
+
 import React from "react";
 import work from "../../public/images/hybridwork.png";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { staggerContainer, textVariant2 } from "@/app/utils/motion";
 
 const WorkTogether = () => {
   return (
-    <div className="inline-flex py-[60px] items-center my-4">
-      <div className="w-[550px] h-[264px]">
-        <p className="w-[440.7px] text-[#050038] [font-family:Inter] text-5xl not-italic font-bold leading-[56px] tracking-[-1px]">
+    <section className="flex flex-col md:flex-row py-[60px] px-4 justify-center items-center  md:px-24 w-screen gap-2">
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className=" w-full md:w-[550px] h-[264px] px-2 "
+      >
+        <motion.p
+          variants={textVariant2}
+          initial="hidden"
+          whileInView="show"
+          className="w-full md:w-[440.7px]  text-[#050038] [font-family:Inter] text-4xl md:text-5xl not-italic font-bold leading-[56px] tracking-[-1px]"
+        >
           Work together, wherever you work
-        </p>
-        <p className="w-[453.716px] text-[rgba(5,0,56,0.60)] [font-family:Inter] text-lg not-italic font-normal leading-6">
+        </motion.p>
+        <p className="sm:w-full md:w-[453.716px] text-[rgba(5,0,56,0.60)] [font-family:Inter] text-lg not-italic font-normal leading-6">
           In the office, remote, or a mix of the two, with Miro, your team can
           connect, collaborate, and co-create in one space no matter where you
           are.
@@ -20,11 +35,15 @@ const WorkTogether = () => {
           </span>
           <span className="text-[#4262FF]">→</span>
         </span>
+      </motion.div>
+      <div className="">
+        <Image
+          src={work}
+          alt={"hydrate work"}
+          className="w-[600px] md:w-[535px] md:h-[500px]"
+        />
       </div>
-      <div className="w-[550px] h-[535px]">
-        <Image src={work} alt={"hydrate work"} />
-      </div>
-    </div>
+    </section>
   );
 };
 

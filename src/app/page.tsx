@@ -15,17 +15,25 @@ import WorkTogether from "@/components/work_together";
 export default function Home() {
   return (
     <>
-      <main className="flex min-h-screen w-full flex-col items-start shrink-0 justify-center ">
-        <Header />
-        <section className="w-full shrink-0 pt-24 px-24 ">
-          <LandingPage />
+      <main className="flex min-h-screen  w-screen  flex-col items-start shrink-0 justify-center ">
+        {/* <Header /> */}
+
+        <LandingPage />
+        <div className="relative">
           <SectionPage />
-          <CallToAction />
-          <WorkTogether />
-          <Connect />
+          <div className="feedback-gradient z-0" />
+        </div>
+
+        <CallToAction />
+        <WorkTogether />
+        <Connect />
+
+        <div className="relative z-0 overflow-hidden w-full">
           <Banner />
           <Tuto />
-        </section>
+          <div className="gradient-02 z-0" />
+        </div>
+
         <Explorer />
         <OurCompany />
         <Cta />

@@ -12,7 +12,11 @@ const Explorer = () => {
   const [active, setActive] = useState("world-2");
 
   return (
-    <section className={`${styles.paddings} mx-auto`} id="explore">
+    <section
+      className={`${styles.paddings} mx-auto sm:w-full relative  md:w-3/4`}
+      id="explore"
+    >
+      <div className="feedback-gradient z-0" />
       <motion.div
         variants={staggerContainer}
         initial="hidden"

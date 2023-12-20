@@ -3,7 +3,7 @@ import List from "./li";
 
 const Header = () => {
   return (
-    <div className="pt-0 pb-px px-[30px] w-screen flex items-start  bg-white border-b border-solid border-[#F0F0F0]">
+    <div className="pt-0 pb-px px-[30px] w-screen sticky top-0 z-10 flex items-start  background-color: rgb(255 255 255 / 0.1) border-b border-solid border-[#F0F0F0] backdrop-blur-[100px]">
       <header className="flex items-center justify-between w-full  h-[90px]">
         <div className="inline-flex items-end">
           <svg

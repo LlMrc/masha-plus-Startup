@@ -13,7 +13,8 @@ type Desc = {
 
 const Footer = () => {
   return (
-    <footer className="flex items-start bg-[#050038]   ">
+    <footer className="flex items-start bg-[#050038] relative overflow-hidden ">
+      <div className="footer-gradient z-0" />
       <div className="flex flex-col items-center gap-[100px] pt-10 w-full">
         <div className="flex items-start pr-10">
           <Ul_1 title={"Product"} />

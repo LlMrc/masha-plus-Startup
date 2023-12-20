@@ -1,15 +1,36 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import brainstorm from "../../public/images/Brainstorm.png";
+import { motion } from "framer-motion";
+import {
+  staggerContainer,
+  textContainer,
+  textVariant2,
+} from "@/app/utils/motion";
 type Props = {
   title: string;
 };
 const Tuto = () => {
   return (
-    <div className="w-[1120px] h-[739.016px] shrink-0 mt-20 mx-[auto]">
-      <p className="text-[#050038] py-2 [font-family:Inter] text-5xl not-italic font-bold leading-[56px] tracking-[-1px]">
-        Built for the way you work
-      </p>
+    <motion.section
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0 }}
+      className="w-[1120px] h-[739.016px] shrink-0 mt-20 mx-[auto]"
+    >
+      <motion.p
+        variants={textContainer}
+        className="text-[#050038] py-2 [font-family:Inter] text-5xl not-italic font-bold leading-[56px] tracking-[-1px]"
+      >
+        {Array.from("Built for the way you work").map((letter, index) => (
+          <motion.span variants={textVariant2} key={index}>
+            {letter === "" ? "\u00a0" : letter}
+          </motion.span>
+        ))}
+      </motion.p>
       <div className="inline-flex justify-end items-start gap-2 ">
         <Title title={"Brainstorming"} />
         <Title title={"Diagramming"} />
@@ -39,7 +60,7 @@ const Tuto = () => {
           <Image src={brainstorm} alt={"brain"} />
         </div>
       </div>
-    </div>
+    </motion.section>
   );
 };
 

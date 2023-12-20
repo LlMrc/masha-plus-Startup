@@ -1,20 +1,35 @@
+"use client";
+
 type Props = {
   title: string;
   description: string;
 };
 
+import { staggerContainer, textVariant2 } from "@/app/utils/motion";
+import { motion } from "framer-motion";
 import React from "react";
 const OurCompany = () => {
   return (
     <section className="w-full px-0 bg-[#FFD02F]">
-      <div className=" text-[#050038] flex flex-col justify-center items-center gap-[17px] w-2/5 mx-[auto]  py-10">
-        <p className="text-[#050038] text-center [font-family:Inter] text-5xl not-italic font-bold leading-[56px] tracking-[-1px]">
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className=" text-[#050038] flex flex-col justify-center items-center gap-[17px] w-2/5 mx-[auto]  py-10"
+      >
+        <motion.p
+          variants={textVariant2}
+          initial="hidden"
+          whileInView="show"
+          className="text-[#050038] text-center [font-family:Inter] text-5xl not-italic font-bold leading-[56px] tracking-[-1px]"
+        >
           Why companies large and small trust Miro
-        </p>
+        </motion.p>
         <p className="text-[#050038] text-center [font-family:Inter] text-lg not-italic font-normal leading-6">
           Contact Sales to request a demo
         </p>
-      </div>
+      </motion.div>
       <div className="grid grid-cols-3 items-center justify-center px-40 py-10">
         <Items
           title={"iso"}

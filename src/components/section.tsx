@@ -8,39 +8,39 @@ import Image from "next/image";
 
 const SectionPage = () => {
   return (
-    <div className="inline-flex py-[60px] items-start my-10">
-      <div className="flex w-[1120px] flex-col  justify-center items-center gap-[48px]">
+    <div className="inline-flex py-[60px]  items-start md:my-10 relative">
+      <div className="flex md:w-[1120px] flex-col   justify-center items-center gap-[48px]">
         <p className="text-[rgba(5,0,56,0.60)] text-center [font-family:Inter] text-lg not-italic font-normal leading-6">
           Trusted by 45M+ users
         </p>
-        <div className="flex h-[92px] gap-10 justify-center items-center pb-7  ">
+        <div className="flex h-[92px] gap-2 md:gap-10 justify-center items-center pb-7  bg-orange-300  ">
           <Image
             src={cisco}
             alt={"cisco"}
             width={224}
             height={64}
-            className=" py-[0.001px]"
+            className=""
           />
           <Image
             src={volvo}
             alt={"cisco"}
             width={53.328}
             height={63.994}
-            className=" py-[0.001px]"
+            className=""
           />
           <Image
             src={deloitte}
             alt={"cisco"}
             width={117.328}
             height={63.997}
-            className=" py-[0.001px]"
+            className=""
           />
           <Image
             src={walmart}
             alt={"cisco"}
             width={117.328}
             height={63.997}
-            className=" py-[0.001px]"
+            className=" "
           />
           <Image
             src={okta}
@@ -48,7 +48,7 @@ const SectionPage = () => {
             width={73}
             height={64}
             priority
-            className=" py-[0.001px] w-[73px]  h-[64px]"
+            className=" w-[54px]  h-[44px]"
           />
         </div>
       </div>
