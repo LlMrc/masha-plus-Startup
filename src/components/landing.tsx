@@ -2,11 +2,12 @@ import React from "react";
 import StartSvg from "./start";
 import hero_img from "../../public/images/hero.png";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const LandingPage = () => {
   return (
-    <div className="inline-flex py-0 px-[40px] items-start gap-[40px]">
-      <div className="w-[440px] flex flex-col h-[469px] gap-4">
+    <section className="inline-flex py-0 px-[40px] items-start gap-[40px]">
+      <motion.div className="w-[440px] flex flex-col h-[469px] gap-4">
         <div className="text-5xl not-italic text-[#050038] font-bold leading-[56px] tracking-[-1px]">
           Take ideas from better to best
         </div>
@@ -111,12 +112,12 @@ const LandingPage = () => {
             </svg>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <div className="flex justify-center items-center">
         <Image src={hero_img} width={640} height={462.844} alt={"hero image"} />
       </div>
-    </div>
+    </section>
   );
 };
 

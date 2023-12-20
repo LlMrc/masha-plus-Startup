@@ -6,7 +6,7 @@ type Props = {
 };
 const Tuto = () => {
   return (
-    <div className="w-[1120px] h-[739.016px] shrink-0 my-20 mx-[auto]">
+    <div className="w-[1120px] h-[739.016px] shrink-0 mt-20 mx-[auto]">
       <p className="text-[#050038] py-2 [font-family:Inter] text-5xl not-italic font-bold leading-[56px] tracking-[-1px]">
         Built for the way you work
       </p>

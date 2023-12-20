@@ -1,12 +1,12 @@
-import React from "react";
 type Props = {
   title: string;
   description: string;
 };
 
+import React from "react";
 const OurCompany = () => {
   return (
-    <div className="w-full px-0 bg-[#FFD02F]">
+    <section className="w-full px-0 bg-[#FFD02F]">
       <div className=" text-[#050038] flex flex-col justify-center items-center gap-[17px] w-2/5 mx-[auto]  py-10">
         <p className="text-[#050038] text-center [font-family:Inter] text-5xl not-italic font-bold leading-[56px] tracking-[-1px]">
           Why companies large and small trust Miro
@@ -35,7 +35,7 @@ const OurCompany = () => {
           description={"integrations with technology partners"}
         />
       </div>
-    </div>
+    </section>
   );
 };
 
