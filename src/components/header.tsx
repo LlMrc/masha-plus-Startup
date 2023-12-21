@@ -45,7 +45,10 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="translate-x-2 delay-75 ease-in" onClick={handleClick}>
+        <div
+          className="block lg:hidden translate-x-2 delay-75 ease-in"
+          onClick={handleClick}
+        >
           {openMenu ? <CloseMenu /> : <HamburgerMenu />}
         </div>
 
