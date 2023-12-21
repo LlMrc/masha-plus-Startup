@@ -16,7 +16,7 @@ const OurCompany = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className=" text-[#050038] flex flex-col justify-center items-center gap-[17px] w-2/5 mx-[auto]  py-10"
+        className=" text-[#050038] flex flex-col justify-center items-center gap-2 md:gap-[17px] md:w-2/5 mx-[auto]  py-10"
       >
         <motion.p
           variants={textVariant2}
@@ -30,7 +30,7 @@ const OurCompany = () => {
           Contact Sales to request a demo
         </p>
       </motion.div>
-      <div className="grid grid-cols-3 items-center justify-center px-40 py-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center px-40 py-10">
         <Items
           title={"iso"}
           description={"ISO-27001 enterprise-grade security compliant"}

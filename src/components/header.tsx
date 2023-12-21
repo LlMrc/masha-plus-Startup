@@ -1,11 +1,23 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import List from "./li";
+import CloseMenu from "./icon/closeMenu";
+import HamburgerMenu from "./icon/hamburgerMenu";
+import styles from "@/app/styles/indx";
+import Link from "next/link";
 
 const Header = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const handleClick = () => {
+    setOpenMenu(!openMenu);
+  };
+
   return (
-    <div className="pt-0 pb-px px-[30px] w-screen sticky top-0 z-10 flex items-start  background-color: rgb(255 255 255 / 0.1) border-b border-solid border-[#F0F0F0] backdrop-blur-[100px]">
-      <header className="flex items-center justify-between w-full  h-[90px]">
-        <div className="inline-flex items-end">
+    <header className="pt-0 pb-px lg:px-[30px]  w-screen sticky top-0 z-10 flex items-start  background-color: rgb(255 255 255 / 0.1) border-b border-solid border-[#F0F0F0] backdrop-blur-[100px]">
+      <div className="flex px-4 items-center  justify-between w-full  h-[90px]">
+        <div className="inline-flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="91"
@@ -20,18 +32,24 @@ const Header = () => {
               fill="#050038"
             />
           </svg>
-          <ul className="flex items-center w-[486.328px] h-[24px] shrink-0">
-            <List name={"Product"} />
-            <List name={"Solutions"} />
-            <List name={"Enterprise"} />
-            <List name={"Resources"} />
-            <li className=" px-2  text-[#050038]  text-base not-italic font-normal leading-6">
-              Pricing
-            </li>
-          </ul>
+          <div className="hidden lg:inline-flex items-end">
+            <ul className="flex items-center w-[486.328px] h-[24px] shrink-0">
+              <List name={"Product"} />
+              <List name={"Solutions"} />
+              <List name={"Enterprise"} />
+              <List name={"Resources"} />
+              <li className=" px-2  text-[#050038]  text-base not-italic font-normal leading-6">
+                Pricing
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <ul className="flex  gap-4 items-center  h-[50px] shrink-0]">
+        <div className="translate-x-2 delay-75 ease-in" onClick={handleClick}>
+          {openMenu ? <CloseMenu /> : <HamburgerMenu />}
+        </div>
+
+        <ul className=" hidden lg:flex  gap-4 items-center  h-[50px] shrink-0]">
           <div className="inline-flex pr-[0.172px] items-start gap-[8px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -64,8 +82,48 @@ const Header = () => {
             </h6>
           </div>
         </ul>
-      </header>
-    </div>
+      </div>
+
+      {/* *************************************************************************** */}
+      <div
+        className={
+          openMenu
+            ? ` mx-auto  h-screen w-full z-10 absolute top-14
+             bg-red-500 flex flex-col gap-2 
+             text-2xl translate-y-8 delay-100 ease-in-out
+             font-semibold
+             space-x-2
+             justify-center items-center `
+            : "hidden"
+        }
+      >
+        <Link href={""}>
+          <p className="pb-2">Product</p>
+        </Link>
+        <Link href={""}>
+          <p className="py-2">Solutions</p>
+        </Link>
+        <Link href={""}>
+          {" "}
+          <p className="py-2">Enterprise</p>
+        </Link>
+        <Link href={""}>
+          <p className="py-2">Resources</p>
+        </Link>
+        <Link href={""}>
+          {" "}
+          <p className="py-2">Pricing</p>
+        </Link>
+
+        <p className="p-y">Contact Sales</p>
+        <p className="p-y">Login</p>
+        <div className="inline-flex items-start pl-[22px] pr-[22.766px] py-[17px]   border [background:#4262FF] rounded-3xl border-solid border-[#4262FF]">
+          <h6 className="  text-white [font-family:Helvetica] text-base not-italic font-normal leading-4">
+            Sign up free →
+          </h6>
+        </div>
+      </div>
+    </header>
   );
 };
 

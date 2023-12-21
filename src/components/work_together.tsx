@@ -36,7 +36,7 @@ const WorkTogether = () => {
           <span className="text-[#4262FF]">→</span>
         </span>
       </motion.div>
-      <div className="">
+      <div className="px-3 md:px-0">
         <Image
           src={work}
           alt={"hydrate work"}

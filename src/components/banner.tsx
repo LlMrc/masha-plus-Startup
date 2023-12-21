@@ -7,7 +7,7 @@ const Banner = () => {
     justify-center items-center 
     bg-section-img bg-contain
      bg-no-repeat  my-0 mx-[auto]  
-     w-[400px]
+     w-[400px] md:w-3/4
      bg-black
      md:h-[350px] "
     >

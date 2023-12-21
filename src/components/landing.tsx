@@ -9,7 +9,7 @@ import { staggerContainer, textVariant, zoomIn } from "@/app/utils/motion";
 
 const LandingPage = () => {
   return (
-    <div className="pt-24 flex flex-col mx-auto  md:flex-row lg:flex-row md:px-24 justify-center  items-center   md:gap-[40px]">
+    <div className="md:pt-24 mt-10 flex flex-col mx-auto  md:flex-row lg:flex-row md:px-24 justify-center  items-center   md:gap-[40px]">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -21,7 +21,7 @@ const LandingPage = () => {
           variants={zoomIn(0.1, 0.5)}
           initial="hidden"
           whileInView="show"
-          className="md:text-5xl sm:text-2xl items-start  not-italic text-[#050038] font-bold leading-[56px] tracking-[-1px]"
+          className="md:text-5xl text-2xl items-start  not-italic text-[#050038] font-bold leading-[56px] tracking-[-1px]"
         >
           Take ideas from better to best
         </motion.div>

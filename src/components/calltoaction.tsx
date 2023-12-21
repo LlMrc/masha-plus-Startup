@@ -21,16 +21,16 @@ const CallToAction = () => {
       className="inline-flex w-full flex-col items-center md:px-24"
     >
       <h2 className="md:w-[1120px] h-[168px]   relative ">
-        <div className="text-[#050038] relative my-0 mx-[auto] text-center h-[168px] w-[448px] [font-family:Inter] text-4xl md:text-5xl not-italic font-bold leading-[56px] tracking-[-1px]">
+        <div className="text-[#050038]  relative my-0 mx-[auto] text-center h-[168px] w-[448px] [font-family:Inter] text-4xl md:text-5xl not-italic font-bold leading-[56px] tracking-[-1px]">
           <motion.p variants={textVariant2} initial="hidden" whileInView="show">
             Collaborate without constraints
           </motion.p>
-          <div className="shrink-0 absolute -top-14 md:-right-6 right-2">
+          <div className="shrink-0 absolute -top-14 md:-right-6 right-10">
             <Image src={banner} alt={"Group"} width={173.381} height={52.518} />
           </div>
         </div>
       </h2>
-      <div className="flex flex-col md:flex-row items-center md:items-start gap-5  px-2 py-0">
+      <div className="flex flex-col md:flex-row items-center md:items-start md:gap-5  px-2 py-0">
         <Section
           title={"Free forever"}
           description={`Our free plan gives you unlimited team members, 
@@ -66,7 +66,7 @@ export default CallToAction;
 
 export const Section = (props: Props) => {
   return (
-    <div className="flex flex-col items-start gap-[29px] pl-6 pr-[22.394px] pt-[23px] pb-11">
+    <div className="flex flex-col items-start gap-[29px] pl-6 pr-[22.394px] md:pt-[23px] pb-11">
       <p className="text-[#050038] [font-family:Inter] text-2xl not-italic font-bold leading-7 tracking-[-0.5px]">
         {props.title}
       </p>

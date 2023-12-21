@@ -5,19 +5,19 @@ import React from "react";
 import pc from "../../public/images/integrations_all_integrations.png";
 import { motion } from "framer-motion";
 import { staggerContainer, textVariant2 } from "@/app/utils/motion";
+import styles from "@/app/styles/indx";
 
 const Connect = () => {
   return (
     <section
-      className="inline-flex flex-col md:flex-row 
-    py-[60px] md:px-[50px] w-full 
-    items-center gap-2 md:gap-4 justify-between "
+      className={`${styles.paddings} inline-flex flex-col md:flex-row justify-center
+    py-[60px] w-full gap-2
+    items-center  md:gap-12 mx-auto md:my-24`}
     >
-      <div className="flex items-start px-2 pr-0 py-[76.813px]">
-        <div className="md:w-[450px] w-full ">
-          <Image src={pc} alt={"pc"} />
-        </div>
+      <div className="md:w-[450px] w-full shadow-md">
+        <Image src={pc} alt={"pc"} />
       </div>
+
       <motion.div
         variants={staggerContainer}
         initial="hidden"

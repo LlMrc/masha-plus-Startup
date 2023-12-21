@@ -23,7 +23,7 @@ const Tuto = () => {
     >
       <motion.p
         variants={textContainer}
-        className="text-[#050038] py-2 [font-family:Inter] text-5xl not-italic font-bold leading-[56px] tracking-[-1px]"
+        className="text-[#050038] p-2  [font-family:Inter] md:text-4xl text-xl lg:text-5xl not-italic font-bold leading-[56px] tracking-[-1px]"
       >
         {Array.from("Built for the way you work").map((letter, index) => (
           <motion.span variants={textVariant2} key={index}>
@@ -31,7 +31,7 @@ const Tuto = () => {
           </motion.span>
         ))}
       </motion.p>
-      <div className="inline-flex justify-end items-start gap-2 ">
+      <div className="hidden md:inline-flex justify-end items-start gap-2 ">
         <Title title={"Brainstorming"} />
         <Title title={"Diagramming"} />
         <Title title={"Meetings & Workshops"} />
@@ -41,23 +41,27 @@ const Tuto = () => {
         <Title title={"Strategic Planning"} />
       </div>
 
-      <div className="flex w-[1060px] h-[517.016px] justify-center my-10 items-start shrink-0 bg-lime-400">
-        <div className="w-[360px] flex flex-col gap-4 h-full shrink-0 bg-slate-50 rounded-sm p-4">
-          <p className="text-[#050038] [font-family:Helvetica] text-lg not-italic font-normal leading-6">
+      <div className="flex flex-col md:flex-row md:w-[1060px] md:h-[517.016px] justify-center my-10 items-start shrink-0 gap-2">
+        <div className="md:w-[360px] shadow-md  flex flex-col gap-4 h-full w-screen py-4 md:px-0 shrink-0 rounded-md bg-slate-50 ">
+          <p className="text-[#050038] m-2 [font-family:Helvetica] text-lg not-italic font-normal leading-6">
             Brainstorming
           </p>
-          <p className="text-[rgba(5,0,56,0.70)] [font-family:Helvetica] text-lg not-italic font-normal leading-6">
+          <p className="text-[rgba(5,0,56,0.70)] mx-2 [font-family:Helvetica] text-lg not-italic font-normal leading-6">
             Unleash creative ideas and build on them with the help of sticky
             notes, images, mind maps, videos, drawing capabilities — the list
             goes on.
           </p>
-          <p className="text-[#4262FF] my-2 [font-family:Helvetica] text-lg not-italic font-normal leading-6">
+          <p className="text-[#4262FF] m-2 [font-family:Helvetica] text-lg not-italic font-normal leading-6">
             Learn more →
           </p>
         </div>
 
-        <div className="w-[700px] h-[517.016px] shrink-0">
-          <Image src={brainstorm} alt={"brain"} />
+        <div className=" px-4 py-2 md:w-[600px]   md:h-[517.016px] shrink-0">
+          <Image
+            src={brainstorm}
+            alt={"brain"}
+            className="md:w-[700px] w-full md:h-[517.016px]"
+          />
         </div>
       </div>
     </motion.section>
