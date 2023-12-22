@@ -8,7 +8,7 @@ const Banner = () => {
     bg-section-img bg-contain
      bg-no-repeat  my-0 mx-[auto]  
      w-[400px] md:w-3/4
-     bg-black
+
      md:h-[350px] "
     >
       <div className="flex items-center justify-center p-1 md:p-4 md:gap-4 md:h-[200px] flex-col w-2/5 md:mr-[200px] bg-slate-200">

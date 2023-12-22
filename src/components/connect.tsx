@@ -23,21 +23,21 @@ const Connect = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className=" w-full md:w-[466px] h-[344px] p-2 md:p-0 "
+        className=" w-full md:w-[466px] h-[344px]  p-2 md:p-0 "
       >
         <motion.p
           variants={textVariant2}
           initial="hidden"
           whileInView="show"
-          className="text-[#050038] w-[355px] md:h-[168px] [font-family:Inter] text-5xl not-italic font-bold leading-[56px] tracking-[-1px]"
+          className="text-[#050038] w-[355px] md:mb-4 mb-1 lg:w-full [font-family:Inter] text-5xl not-italic font-bold leading-[56px] tracking-[-1px]"
         >
-          we are your trusted partner for a flourishing digital future
+          We are your trusted partner for a flourishing digital future
         </motion.p>
 
         <p className="md:w-[458.934px] text-[rgba(5,0,56,0.60)] [font-family:Inter] text-lg not-italic font-normal leading-6">
-          Whether you want to edit your Google Docs, resolve Jira issues, or
-          collaborate over Zoom, Miro has 100+ integrations with tools you
-          already use and love.
+          We combine expertise, creativity, and commitment to turn your
+          challenges into opportunities, ensuring exceptional IT solutions and a
+          reliable partnership for the success of your business.
         </p>
         <div className="inline-flex items-end gap-[5px] my-2">
           <p className="  text-[#4262FF] [font-family:Inter] text-lg not-italic font-normal leading-6">
