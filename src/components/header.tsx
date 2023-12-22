@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import List from "./li";
 import CloseMenu from "./icon/closeMenu";
 import HamburgerMenu from "./icon/hamburgerMenu";
-import styles from "@/app/styles/indx";
+
 import Link from "next/link";
 import masha from "../../public/images/masha.png";
 import Image from "next/image";
@@ -17,8 +17,8 @@ const Header = () => {
   };
 
   return (
-    <header className="pt-0 pb-px lg:px-[30px]  w-screen sticky top-0 z-10 flex items-start  background-color: rgb(255 255 255 / 0.1) border-b border-solid border-[#F0F0F0] backdrop-blur-[100px]">
-      <div className="flex px-4 items-center  justify-between w-full  h-[90px]">
+    <header className="pt-0 pb-px lg:px-[30px]   w-screen sticky top-0 z-10 flex items-start  background-color: rgb(255 255 255 / 0.1) border-b border-solid border-[#F0F0F0] backdrop-blur-[100px]">
+      <div className="flex px-4 items-center sticky top-0 justify-between w-full  h-[90px]">
         <div className="inline-flex">
           <Image
             src={masha}
