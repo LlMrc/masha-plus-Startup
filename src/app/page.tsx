@@ -25,18 +25,22 @@ export default function Home() {
         </div>
 
         <CallToAction />
-        <WorkTogether />
-        <Connect />
-
-        <div className="relative z-0 overflow-hidden w-full">
-          <Banner />
-          <Tuto />
+        <div className="relative">
+          <WorkTogether />
+          <Connect />
           <div className="gradient-02 z-0" />
         </div>
 
+        <Banner />
+        <Tuto />
+
         <Explorer />
-        <OurCompany />
-        <Cta />
+
+        <div className="relative z-0 overflow-hidden w-full">
+          <OurCompany />
+          <Cta />
+          <div className="feedback-gradient z-0" />
+        </div>
       </main>
       <Footer />
     </>

@@ -24,7 +24,7 @@ const OurCompany = () => {
           whileInView="show"
           className="text-[#050038] text-center [font-family:Inter] text-5xl not-italic font-bold leading-[56px] tracking-[-1px]"
         >
-          Why companies large and small trust Miro
+          Why companies large and small trust Masha+
         </motion.p>
         <p className="text-[#050038] text-center [font-family:Inter] text-lg not-italic font-normal leading-6">
           Contact Sales to request a demo

@@ -26,7 +26,7 @@ const LandingPage = () => {
           Take ideas from better to best
         </motion.div>
         <div className="text-lg not-italic text-[#050038B8] font-normal leading-6">
-          Miro is your team's visual platform to connect, collaborate, and
+          Masha+ is your team's visual platform to connect, collaborate, and
           create — together.
         </div>
 
@@ -62,7 +62,7 @@ const LandingPage = () => {
           </div>
 
           <div className="flex items-start gap-[14.328px] self-end px-10 text-2xl py-0">
-            <h4>Contact</h4>
+            <h4>Contact us ✉</h4>
           </div>
         </div>
       </motion.div>

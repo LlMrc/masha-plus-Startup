@@ -32,24 +32,25 @@ const CallToAction = () => {
       </h2>
       <div className="flex flex-col md:flex-row items-center md:items-start md:gap-5  px-2 py-0">
         <Section
-          title={"Free forever"}
-          description={`Our free plan gives you unlimited team members, 
-        3 boards, and 300+ expert-made templates. Signing up with your 
-        work email lets you bring in your team faster. See our
-        pricing plans for more features.`}
+          title={"Unlocking Digital Excellence"}
+          description={`Dive into the digital future with our team of seasoned 
+          IT professionals! Armed with cutting-edge expertise,
+           we deliver innovative, tailor-made solutions to 
+           address your most complex needs.`}
         />
 
         <Section
-          title={"Easy integrations"}
-          description={`Miro has 100+ powerful integrations with tools you 
-        already use like G Suite, Slack, and Jira, so your workflow is seamless.
-         View the full list in our Marketplace .`}
+          title={"Technological Priority"}
+          description={`In the heart of the digital era, our dynamic 
+          team of IT experts is ready to be your trusted partner. 
+          Together, we shape the future of your business by offering avant-garde IT solutions.`}
         />
         <Section
-          title={"Security first"}
-          description={`We treat your data like you would — with the utmost care.
-         We follow industry-leading security standards and give you tools to protect
-          intellectual property. Learn more at our Trust Center .`}
+          title={"Digital Success"}
+          description={`Join forces with dedicated IT enthusiasts and unlock
+           the doors to innovation and success for your business. Our devoted 
+           team is at the forefront of the latest technological advancements, 
+          ready to craft solutions tailored to your specific needs. `}
         />
       </div>
 

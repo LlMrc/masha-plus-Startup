@@ -26,8 +26,15 @@ const Explorer = () => {
         <TitleText
           title={
             <>
-              Choose the world you want
-              <br className="md:block hidden" /> to explore
+              <TitleText
+                title={
+                  <>
+                    Experience excellence with
+                    <br className="md:block hidden" /> our dedicated team
+                  </>
+                }
+                textStyles="text-center"
+              />
             </>
           }
           textStyles="text-center"

@@ -14,6 +14,7 @@ import linkedin from "../../public/images/linkedin.svg";
 import styles from "../app/styles/indx";
 import { fadeIn } from "../app/utils/motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const ExpandedCard = (props: Props) => (
   <motion.div
@@ -44,11 +45,16 @@ const ExpandedCard = (props: Props) => (
         <div
           className={`${styles.flexCenter} w-[60px] h-[60px] rounde-[24px] glassmorphism mb-[16px] rounded-[24px]`}
         >
-          <Image
-            src={linkedin}
-            alt={"linkedin"}
-            className="w-1/2 h-1/2 object-contain"
-          />
+          <Link
+            href={"https://www.linkedin.com/in/louis-marc-leonard-a57a13192/"}
+            className="w-full  flex items-center justify-center   object-contain"
+          >
+            <Image
+              src={linkedin}
+              alt={"linkedin"}
+              className="w-1/2 h-1/2 object-contain"
+            />
+          </Link>
         </div>
         <p className="font-normal text-[16px] leading-[20px] text-white uppercase">
           {props.profession}

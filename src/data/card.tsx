@@ -1,7 +1,7 @@
 const CardList = [
   {
     id: "1",
-    name: "leonard louis Marc",
+    name: "Louis Marc Leonard",
     url: "https://images.pexels.com/photos/532220/pexels-photo-532220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     profession: "Front-end developer",
   },

@@ -44,23 +44,24 @@ const Tuto = () => {
       <div className="flex flex-col md:flex-row md:w-[1060px] md:h-[517.016px] justify-center my-10 items-start shrink-0 gap-2">
         <div className="md:w-[360px] shadow-md  flex flex-col gap-4 h-full w-screen py-4 md:px-0 shrink-0 rounded-md bg-slate-50 ">
           <p className="text-[#050038] m-2 [font-family:Helvetica] text-lg not-italic font-normal leading-6">
-            Brainstorming
+            Masha plus
           </p>
           <p className="text-[rgba(5,0,56,0.70)] mx-2 [font-family:Helvetica] text-lg not-italic font-normal leading-6">
-            Unleash creative ideas and build on them with the help of sticky
-            notes, images, mind maps, videos, drawing capabilities — the list
-            goes on.
+            we ensure your online presence not only meets but exceeds the
+            expectations of today's digital landscape. Elevate your brand,
+            engage your audience, and thrive in the online realm with our
+            top-notch web development solutions. Your success is our code!
           </p>
           <p className="text-[#4262FF] m-2 [font-family:Helvetica] text-lg not-italic font-normal leading-6">
             Learn more →
           </p>
         </div>
 
-        <div className=" px-4 py-2 md:w-[600px]   md:h-[517.016px] shrink-0">
+        <div className=" px-4 py-2 md:w-[600px]  p-2 md:p-0 md:h-[517.016px] shrink-0">
           <Image
             src={brainstorm}
             alt={"brain"}
-            className="md:w-[700px] w-full md:h-[517.016px]"
+            className="md:w-[700px] w-[350px] md:h-[517.016px]"
           />
         </div>
       </div>
