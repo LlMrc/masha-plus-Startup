@@ -14,14 +14,14 @@ import { textContainer, textVariant2 } from "../app/utils/motion";
 import { ReactElement } from "react";
 
 export const TitleText = (props: Props_1) => (
-  <motion.h2
+  <motion.div
     variants={textVariant2}
     initial="hidden"
     whileInView="show"
     className={`mt-[8px] font-bold md:text-[64px] text-[40px] text-[#050038]  ${props.textStyles}`}
   >
     {props.title}
-  </motion.h2>
+  </motion.div>
 );
 
 export const TypingText = (props: Props) => (
