@@ -13,11 +13,11 @@ const Cta = () => {
         <p className="text-[rgba(255,255,255,0.60)] text-center [font-family:Inter] text-lg not-italic font-normal leading-6">
           Joining as an organization? Contact Sales
         </p>
-        <div className="border p-2 m-2 inline-flex [background:#4262FF] rounded-[32px] border-solid border-[#4262FF]">
-          <p className="text-white text-center [font-family:Inter] text-lg not-italic font-normal leading-6">
-            Sign up free
+        <div className="shadow-lg relative overflow-hidden group z-0 text-white inline-flex items-center justify-center p-3 border [background:#4262FF] rounded-3xl border-solid border-white mt-3 hover:text-gray-800">
+          <p className="  text-center [font-family:Helvetica] text-lg not-italic font-normal leading-6">
+            Sign up free →
           </p>
-          <p className="mx-2">→</p>
+          <div className="absolute inset-0 bg-white translate-x-full transition-all duration-300 -z-10 ease-in group-hover:translate-x-0" />
         </div>
       </div>
     </div>

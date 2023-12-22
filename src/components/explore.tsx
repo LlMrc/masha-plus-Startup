@@ -12,7 +12,10 @@ const Explorer = () => {
   const [active, setActive] = useState("world-2");
 
   return (
-    <section className={`${styles.paddings} mx-auto`} id="explore">
+    <section
+      className={`${styles.paddings} relative mx-auto overflow-hidden`}
+      id="explore"
+    >
       <motion.div
         variants={staggerContainer}
         whileInView="show"

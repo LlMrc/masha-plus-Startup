@@ -29,12 +29,12 @@ const WorkTogether = () => {
           connect, collaborate, and co-create in one space no matter where you
           are.
         </p>
-        <span className="inline-flex items-end justify-center gap-[5.016px] my-4 ">
+        <div className="inline-flex items-end justify-center gap-[5.016px] my-4 transition-all duration-300 hover:scale-105 ">
           <span className="flex w-[104.716px] h-[22px] flex-col  text-[#4262FF] justify-center shrink-0 border-b-[#4262FF] border-b border-solid">
             Learn more
           </span>
           <span className="text-[#4262FF]">→</span>
-        </span>
+        </div>
       </motion.div>
       <div className="px-3 md:px-0">
         <Image

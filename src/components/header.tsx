@@ -75,10 +75,11 @@ const Header = () => {
           <h6 className="text-[#050038] [font-family:Inter] text-base not-italic font-normal leading-6">
             Login
           </h6>
-          <div className="inline-flex items-start pl-[22px] pr-[22.766px] py-[17px]   border [background:#4262FF] rounded-3xl border-solid border-[#4262FF]">
-            <h6 className="  text-white [font-family:Helvetica] text-base not-italic font-normal leading-4">
+          <div className="relative overflow-hidden group z-0 inline-flex items-start pl-[22px] pr-[22.766px] py-[17px] text-white  border [background:#4262FF] rounded-3xl border-solid border-[#4262FF] hover:text-gray-800">
+            <h6 className="  [font-family:Helvetica] text-base not-italic font-normal leading-4">
               Sign up free →
             </h6>
+            <div className="absolute inset-0 bg-white translate-x-full transition-all duration-300 -z-10 ease-in group-hover:translate-x-0" />
           </div>
         </ul>
       </div>
@@ -125,11 +126,12 @@ const Header = () => {
           </p>
           <div
             onClick={handleClick}
-            className="inline-flex items-start pl-[22px] pr-[22.766px] py-[17px]   border [background:#4262FF] rounded-3xl border-solid border-[#4262FF]"
+            className="relative overflow-hidden group z-0 inline-flex items-start pl-[22px] pr-[22.766px] py-[17px] text-white  border [background:#4262FF] rounded-3xl border-solid border-[#4262FF] hover:text-gray-800"
           >
             <h6 className="  text-white [font-family:Helvetica] text-base not-italic font-normal leading-4">
               Sign up free →
             </h6>
+            <div className="absolute inset-0 bg-white translate-x-full transition-all duration-300 -z-10 ease-in group-hover:translate-x-0" />
           </div>
         </div>
       </div>

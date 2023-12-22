@@ -54,10 +54,11 @@ const CallToAction = () => {
         />
       </div>
 
-      <div className=" inline-flex items-start pl-[29px] pr-[28.219px] pt-2.5 pb-3.5 rounded-[24px] border-solid border border-[#4262FF] bg-[#4262FF]">
-        <p className=" text-white text-center [font-family:Helvetica] text-lg not-italic font-normal leading-6">
+      <div className=" relative overflow-hidden group shadow-lg z-0 text-white inline-flex items-center justify-center p-3 border [background:#4262FF] rounded-3xl border-solid border-[#4262FF] hover:text-gray-800">
+        <p className="  text-center [font-family:Helvetica] text-lg not-italic font-normal leading-6">
           Sign up free →
         </p>
+        <div className="absolute inset-0 bg-white translate-x-full transition-all duration-300 -z-10 ease-in group-hover:translate-x-0" />
       </div>
     </motion.section>
   );

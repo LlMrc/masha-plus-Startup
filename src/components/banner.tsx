@@ -18,7 +18,7 @@ const Banner = () => {
         <p className="text-[#050038] text-center [font-family:Helvetica] text-sm md:text-lg not-italic font-normal leading-6">
           How has our relationship with work changed?
         </p>
-        <div className="border [background:#4262FF]   rounded-[40px] border-solid border-[#4262FF]">
+        <div className="border [background:#4262FF]   rounded-[40px] border-solid border-[#4262FF] hover:shadow-lg">
           <p className="text-white  md:m-2 my-1 mx-2 text-center [font-family:Helvetica] text-xs md:text-sm not-italic font-normal leading-5">
             View the report →
           </p>

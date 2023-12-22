@@ -148,10 +148,11 @@ const Ul_1 = (prop: Props) => {
             <List description={"Accessibility"} />
             <List description={"Changelog"} />
           </li>
-          <div className="flex w-[108.609px] justify-center items-end gap-[5px]">
-            <p className=" text-white bg-yellow-400 [font-family:Inter] text-base not-italic font-normal leading-6 border border-solid p-1 rounded-xl border-red-500">
+          <div className="relative  text-white  bg-yellow-400 z-0  py-1 px-2 overflow-hidden border-solid rounded-2xl cursor-pointer  flex justify-center items-center  group hover:text-gray-800">
+            <p className=" [font-family:Inter] text-base not-italic font-normal leading-6 ">
               View demo →
             </p>
+            <div className="absolute inset-0 bg-slate-300 -z-10 translate-x-full duration-300 ease-in group-hover:translate-x-0" />
           </div>
         </ul>
       </div>

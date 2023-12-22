@@ -39,8 +39,8 @@ const Connect = () => {
           challenges into opportunities, ensuring exceptional IT solutions and a
           reliable partnership for the success of your business.
         </p>
-        <div className="inline-flex items-end gap-[5px] my-2">
-          <p className="  text-[#4262FF] [font-family:Inter] text-lg not-italic font-normal leading-6">
+        <div className="inline-flex text-[#4262FF] transition-all duration-300 items-end gap-[5px] my-2 hover:text-red-600 hover:scale-105">
+          <p className="[font-family:Inter] text-lg not-italic font-normal leading-6">
             Learn more
           </p>
           <p className="text-[#4262FF] [font-family:Inter] text-lg not-italic font-normal leading-6">
