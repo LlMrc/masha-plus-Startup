@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+![459shots_so](https://github.com/LlMrc/masha-plus-Startup/assets/90993312/782a3fc4-c7d4-498a-a352-6856b87fdb71)
+
 ## Getting Started
 
 First, run the development server:
