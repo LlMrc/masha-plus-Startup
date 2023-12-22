@@ -42,7 +42,7 @@ const Tuto = () => {
       </div>
 
       <div className="flex flex-col md:flex-row md:w-[1060px] md:h-[517.016px] justify-center my-10 items-start shrink-0 gap-2">
-        <div className="md:w-[360px] shadow-md  flex flex-col gap-4 h-full w-screen py-4 md:px-0 shrink-0 rounded-md bg-slate-50 ">
+        <div className="md:w-[360px] shadow-md  flex flex-col gap-4 h-full w-screen py-4 md:px-0 shrink-0 rounded-md bg-slate-50">
           <p className="text-[#050038] m-2 [font-family:Helvetica] text-lg not-italic font-normal leading-6">
             Masha plus
           </p>
@@ -57,7 +57,7 @@ const Tuto = () => {
           </p>
         </div>
 
-        <div className=" px-4 py-2 md:w-[600px]  p-2 md:p-0 md:h-[517.016px] shrink-0">
+        <div className="px-4 py-2 md:w-[600px]  p-2 md:p-0 md:h-[517.016px] shrink-0">
           <Image
             src={brainstorm}
             alt={"brain"}

@@ -5,7 +5,7 @@ import StartSvg from "./start";
 import hero_img from "../../public/images/hero.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { staggerContainer, textVariant, zoomIn } from "@/app/utils/motion";
+import { staggerContainer, zoomIn } from "@/app/utils/motion";
 
 const LandingPage = () => {
   return (
@@ -15,7 +15,7 @@ const LandingPage = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className=" flex flex-col h-[469px] px-2 sm:full  md:w-[500px] gap-4 "
+        className="flex flex-col h-[469px] px-2 sm:full  md:w-[500px] gap-4 "
       >
         <motion.div
           variants={zoomIn(0.1, 0.5)}
@@ -67,7 +67,7 @@ const LandingPage = () => {
         </div>
       </motion.div>
 
-      <div className="  ">
+      <div className="">
         <Image
           className="sm:w-screen md:w-[580px]  md:h-[462.844px]"
           src={hero_img}
