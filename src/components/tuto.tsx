@@ -19,7 +19,7 @@ const Tuto = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="w-[1120px] h-[739.016px] shrink-0 mt-20 mx-[auto]"
+      className="md:w-[1120px] w-full h-[739.016px] shrink-0 mt-20 mx-[auto]"
     >
       <motion.p
         variants={textContainer}
@@ -41,8 +41,8 @@ const Tuto = () => {
         <Title title={"Strategic Planning"} />
       </div>
 
-      <div className="flex flex-col md:flex-row md:w-[1060px] md:h-[517.016px] justify-center my-10 items-start shrink-0 gap-2">
-        <div className="md:w-[360px] shadow-md  flex flex-col gap-4 h-full w-screen py-4 md:px-0 shrink-0 rounded-md bg-slate-50">
+      <div className="flex flex-col md:flex-row  md:w-[1060px] md:h-[517.016px] justify-center my-10 items-start shrink-0 gap-2">
+        <div className="md:w-[360px] shadow-md px-2 flex flex-col gap-4 h-full w-screen py-4 md:px-0 shrink-0 rounded-md bg-slate-50">
           <p className="text-[#050038] m-2 [font-family:Helvetica] text-lg not-italic font-normal leading-6">
             Masha plus
           </p>

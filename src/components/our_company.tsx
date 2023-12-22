@@ -30,7 +30,7 @@ const OurCompany = () => {
           Contact Sales to request a demo
         </p>
       </motion.div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center px-40 py-10">
+      <div className="grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-3 items-center justify-center px-4 md:px-[60px] lg:px-[100px] py-2 md:py-10">
         <Items
           title={"iso"}
           description={"ISO-27001 enterprise-grade security compliant"}
@@ -56,9 +56,9 @@ const OurCompany = () => {
 
 const Items = (props: Props) => {
   return (
-    <div className="flex flex-col items-center py-10 min-h-[200px]">
+    <div className="flex flex-col items-center justify-center  md:py-10 min-h-[200px]">
       <p className="text-4xl font-bold text-[#050038]">{props.title}</p>
-      <p className="text-[#050038] w-[332.966px] text-center [font-family:Inter] text-lg not-italic font-normal leading-6">
+      <p className="text-[#050038] text-center [font-family:Inter] text-lg not-italic font-normal leading-6">
         {props.description}
       </p>
     </div>

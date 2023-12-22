@@ -14,8 +14,12 @@ const Connect = () => {
     py-[60px] w-full gap-2
     items-center  md:gap-12 mx-auto md:my-24`}
     >
-      <div className="md:w-[450px] w-full shadow-md">
-        <Image src={pc} alt={"pc"} />
+      <div className=" md:px-0 shadow-md">
+        <Image
+          src={pc}
+          alt={"pc"}
+          className="w-full md:w-[535px] md:h-[500px]"
+        />
       </div>
 
       <motion.div
@@ -29,7 +33,7 @@ const Connect = () => {
           variants={textVariant2}
           initial="hidden"
           whileInView="show"
-          className="text-[#050038] w-[355px] md:mb-4 mb-1 lg:w-full [font-family:Inter] text-5xl not-italic font-bold leading-[56px] tracking-[-1px]"
+          className="text-[#050038] md:w-[355px] md:mb-4 mb-1 lg:w-full [font-family:Inter] text-4xl md:text-5xl not-italic font-bold leading-[56px] tracking-[-1px]"
         >
           We are your trusted partner for a flourishing digital future
         </motion.p>

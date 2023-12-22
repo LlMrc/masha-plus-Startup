@@ -9,7 +9,7 @@ import { staggerContainer, zoomIn } from "@/app/utils/motion";
 
 const LandingPage = () => {
   return (
-    <div className="md:pt-24 mt-10 flex flex-col mx-auto  md:flex-row lg:flex-row md:px-24 justify-center  items-center   md:gap-[40px]">
+    <div className="md:pt-24 mt-10 px-2 flex flex-col mx-auto  md:flex-row lg:flex-row md:px-24 justify-center  items-center   md:gap-[40px]">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -21,7 +21,7 @@ const LandingPage = () => {
           variants={zoomIn(0.1, 0.5)}
           initial="hidden"
           whileInView="show"
-          className="md:text-5xl text-2xl items-start  not-italic text-[#050038] font-bold leading-[56px] tracking-[-1px]"
+          className="md:text-5xl text-4xl items-start  not-italic text-[#050038] font-bold leading-[56px] tracking-[-1px]"
         >
           Take ideas from better to best
         </motion.div>
@@ -63,12 +63,12 @@ const LandingPage = () => {
               <StartSvg />
               <StartSvg />
             </div>
-            <span className="text-[#050038] [font-family:Helvetica] text-[11px] not-italic font-normal leading-[15px]">
+            <span className="text-[#050038] p-1  [font-family:Helvetica] text-[11px] not-italic font-normal leading-[15px]">
               Based on 5149+ reviews:
             </span>
           </div>
 
-          <div className="flex items-start gap-[14.328px] self-end px-10 text-2xl py-0">
+          <div className="flex items-start gap-[14.328px] self-end px-4 md:px-10 md:text-2xl py-0">
             <h4 className="hover:text-blue-800">Contact us ✉</h4>
           </div>
         </div>

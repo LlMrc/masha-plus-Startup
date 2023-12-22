@@ -15,7 +15,7 @@ import WorkTogether from "@/components/work_together";
 export default function Home() {
   return (
     <>
-      <main className="flex min-h-screen  w-screen  flex-col items-start shrink-0 justify-center ">
+      <main className="flex min-h-screen overflow-x-hidden  w-screen  flex-col items-start shrink-0 justify-center ">
         <Header />
 
         <LandingPage />
