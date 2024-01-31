@@ -40,14 +40,13 @@ const LandingPage = () => {
           </div>
 
           <div
-            className="relative overflow-hidden flex  group bg-[#4262FF] h-[48px] w-full
+            className="relative overflow-hidden flex   bg-[#4262FF] h-[48px] w-full
             text-white justify-center z-0 shadow-lg
-           items-center px-2 rounded-[32px] border border-solid border-[#4262FF] hover:text-[#5F5C80]"
+           items-center px-2 rounded-[32px] border border-solid border-[#4262FF]"
           >
             <h6 className=" text-center [font-family:Helvetica] text-lg not-italic font-normal leading-[27px]">
               Sign up free →
             </h6>
-            <div className="absolute inset-0 bg-white translate-x-full transition-all duration-300 -z-10 ease-in group-hover:translate-x-0" />
           </div>
         </div>
 

@@ -7,6 +7,7 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import LandingPage from "@/components/landing";
 import OurCompany from "@/components/our_company";
+import Popup from "@/components/popup";
 import SectionPage from "@/components/section";
 
 import Tuto from "@/components/tuto";
@@ -14,7 +15,7 @@ import WorkTogether from "@/components/work_together";
 
 export default function Home() {
   return (
-    <>
+    <div className="relative">
       <Header />
       <main className="flex min-h-screen overflow-x-hidden  w-screen  flex-col items-start shrink-0 justify-center ">
         <LandingPage />
@@ -43,6 +44,7 @@ export default function Home() {
         </div>
       </main>
       <Footer />
-    </>
+      <Popup />
+    </div>
   );
 }
