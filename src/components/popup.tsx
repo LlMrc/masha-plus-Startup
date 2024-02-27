@@ -25,7 +25,7 @@ const Popup = () => {
             repeatType: "reverse",
             ease: "easeInOut",
           }}
-          className="z-10 fixed top-[50px]  mr-auto ml-auto left-0 right-0 w-3/5 h-[500px]"
+          className="z-10 fixed md:top-[50px] top-[10rem] mr-auto ml-auto left-0 right-0 md:w-3/5 md:h-[500px] sm:w-full px-6 md:px-0"
         >
           <motion.div
             key="popup"
@@ -34,7 +34,7 @@ const Popup = () => {
             animate={{ y: 0, opacity: 1, scale: 1 }}
             transition={{ duration: 0.2, ease: "easeOut", delay: 8 }}
             exit={{ y: "50%", opacity: 0, transition: { duration: 0.2 } }}
-            className={` bg-cover bg-popup bg-center w-full  h-full rounded-lg  shadow-2xl border-2`}
+            className={`bg-cover bg-popup bg-center md:h-full md:w-full h-[200px] rounded-lg  shadow-2xl border-2`}
           >
             <div
               onClick={onclick}
